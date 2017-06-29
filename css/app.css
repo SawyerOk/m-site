@@ -1,0 +1,106 @@
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: orange;
+  color: white; }
+
+ul {
+  list-style: none; }
+
+#header {
+  margin: -20px; }
+  #header ul {
+    margin: 0;
+    width: 100%;
+    display: inline-block; }
+  #header li
+  .logo {
+    display: inline; }
+    #header li
+    .logo img {
+      width: 100%; }
+  #header a {
+    display: inline-block;
+    height: 60px;
+    float: left;
+    width: 16.66667%;
+    padding: 5px;
+    background: #37305E;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+#container {
+  margin: 0 auto;
+  width: 100%;
+  background: #e21; }
+  #container .l-main {
+    width: 73%;
+    float: left;
+    margin: 25px 10px;
+    padding: 10px; }
+    #container .l-main article {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      color: black; }
+      #container .l-main article p {
+        margin: 0 0 1em; }
+    #container .l-main section.post-head small {
+      display: block;
+      margin: 0 0 20px;
+      padding: 0 0 20px;
+      border-bottom: solid 1px #eee;
+      color: #00c6a0; }
+    #container .l-main section.post-foot {
+      font-size: 14px;
+      border-top: solid 1px #eee;
+      margin: 20px 0 0 0;
+      padding: 20px 0 0 0; }
+    #container .l-main .art-1 img {
+      float: left;
+      margin: 0 20px 10px 0; }
+    #container .l-main .art-2 img {
+      float: right;
+      margin: 0 0 10px 10px; }
+  #container .l-aside {
+    width: 23%;
+    float: right;
+    margin: 25px 10px;
+    background: blue;
+    padding: 10px;
+    display: align-content; }
+    #container .l-aside img {
+      width: 100%; }
+
+#footer {
+  background: black; }
+  #footer ul {
+    margin: 30px; }
+  #footer li a {
+    color: #fff;
+    text-decoration: none; }
+    #footer li a:hover {
+      color: #aaa; }
+  #footer .f-links {
+    float: left; }
+  #footer .f-info {
+    float: right; }
+  #footer p {
+    clear: both;
+    text-align: center;
+    padding-bottom: 10px; }
+
+/*# sourceMappingURL=app.css.map */
