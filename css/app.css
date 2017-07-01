@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab|Montserrat");
 .clearfix:after {
   content: "";
   display: block;
@@ -11,8 +12,13 @@
   box-sizing: border-box; }
 
 body {
+  min-width: 605px;
   background-color: #6CA9D7;
   color: #000; }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: 'Zilla Slab', serif; }
+  body p {
+    font-family: "Montserrat", sans-serif; }
 
 ul {
   list-style: none; }
@@ -23,29 +29,38 @@ ul {
 #header li
 a {
   position: relative;
-  left: 25%;
   display: inline-block;
   float: left;
-  width: 12.5%;
+  width: 20%;
   padding: 5px;
-  background: #0963A8;
+  background: #6F6000;
   border-right: 1px solid #fff;
-  color: #fff;
+  color: #F6E36D;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-size: 14px; }
   #header li
   a:hover {
-    background: #074A7E; }
+    background: #D8C340;
+    color: #6F6000; }
+#header .h-main {
+  color: #5664A8;
+  height: 100px;
+  background-color: #22327F;
+  margin-top: -25px; }
 
+@media screen and (max-width: 705px) {
+  #header li a {
+    font-size: 12px; } }
 #container {
   margin: 0 auto;
   width: 100%;
-  background: #6CA9D7; }
+  background: #6CA9D7;
+  padding: 5px; }
   #container .l-main {
     width: 73%;
     float: left;
-    margin: 25px 10px;
     padding: 10px; }
     #container .l-main article {
       background: white;
@@ -56,40 +71,53 @@ a {
         margin: 0 0 1em; }
     #container .l-main section.post-head small {
       display: block;
-      margin: 0 0 20px;
-      padding: 0 0 20px;
-      border-bottom: solid 1px #eee;
-      color: #00c6a0; }
+      margin: 0 0 10px;
+      padding: 0 0 10px;
+      border-bottom: solid 2px #bbb;
+      color: #00c6a0;
+      font-size: 14px; }
     #container .l-main section.post-foot {
-      font-size: 14px;
+      font-size: 15px;
       border-top: solid 1px #eee;
-      margin: 20px 0 0 0;
-      padding: 20px 0 0 0; }
+      margin: 5px 0 0 0;
+      padding: 5px 0 0 0; }
     #container .l-main .art-1 img {
       float: left;
-      margin: 0 20px 10px 0; }
+      margin: 0 10px 10px 0; }
     #container .l-main .art-2 img {
       float: right;
       margin: 0 0 10px 10px; }
   #container .l-aside {
     width: 23%;
     float: right;
-    margin: 25px 10px;
-    background: blue;
+    margin-top: 24px;
     padding: 10px;
     display: align-content; }
     #container .l-aside img {
       width: 100%; }
 
+@media screen and (max-width: 770px) {
+  #container .l-aside {
+    width: 100%;
+    display: inline;
+    float: left; }
+    #container .l-aside img {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      padding: 5px; }
+  #container .l-main {
+    width: 100%; } }
 #footer {
-  background: black; }
+  background: #6F3900;
+  border: 2px solid #D88E40; }
   #footer ul {
-    margin: 30px; }
+    margin: 10px; }
   #footer li a {
-    color: #fff;
+    color: #D88E40;
     text-decoration: none; }
     #footer li a:hover {
-      color: #aaa; }
+      color: #BA6E1E; }
   #footer .f-links {
     float: left; }
   #footer .f-info {
@@ -97,6 +125,7 @@ a {
   #footer p {
     clear: both;
     text-align: center;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    color: #D88E40; }
 
 /*# sourceMappingURL=app.css.map */
