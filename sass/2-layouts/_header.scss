@@ -1,4 +1,5 @@
-$li-num : 8;
+$li-num : 5;
+$a-f-size : 14px;
 #header {
   ul {
     margin: 0;
@@ -7,24 +8,39 @@ $li-num : 8;
   li
     a {
       position: relative;
-      left: 100/$li-num * 2% ;
 
       display: inline-block;
       float: left;
       width: 100/$li-num * 1% ;
       padding: 5px;
 
-      background: #0963A8;
+      background: #6F6000;
       border-right: 1px solid #fff;
 
-      color: #fff;
+      color: #F6E36D;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
+      font-size: $a-f-size;
 
       &:hover {
-        background: #074A7E;
+        background: #D8C340;
+        color: #6F6000;
       }
     }
+  .h-main {
+    color: #5664A8;
+    height: 100px;
+    background-color: #22327F;
+    margin-top: -25px;
+  }
+}
 
+
+@media screen and (max-width: 705px){
+  #header {
+    li a {
+      font-size: $a-f-size - 2px;
+    }
+  }
 }
