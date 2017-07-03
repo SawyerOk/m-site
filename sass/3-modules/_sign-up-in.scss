@@ -85,47 +85,48 @@ a {
 
 /* Social Login Form */
 
-.social_login .social_box  {
-    display: block;
-     clear: both;
-     padding: 10px;
-     margin-bottom:  10px;
-     background:  #F4F4F2;
-     overflow:  hidden;
-}
+.social_login {
+    .social_box  {
+       display: block;
+       clear: both;
+       padding: 10px;
+       margin-bottom:  10px;
+       background:  #F4F4F2;
+       overflow:  hidden;
 
-.social_login .icon  {
-    display: block;
-     width: 10px;
-     padding: 5px 10px;
-     margin-right:  10px;
-     float: left;
-     color: #FFF;
-     font-size: 16px;
-     text-align:  center;
-}
+       &:hover  {
+           background:  #E4E4E2;
+       }
+  }
 
-.social_login .fb .icon  {
-    background: #3B5998;
-}
+    .icon  {
+      display: block;
+      width: 10px;
+      padding: 5px 10px;
+      margin-right:  10px;
+      float: left;
+      color: #FFF;
+      font-size: 16px;
+      text-align:  center;
+    }
 
-.social_login .google .icon  {
-    background: #DD4B39;
-}
+    .fb .icon  {
+        background: #3B5998;
+    }
 
-.social_login .icon_title  {
-    display: block;
-     padding: 5px 0;
-     float: left;
-     font-weight:  bold;
-     font-size:  16px;
-     color: #777;
-}
+    .google .icon  {
+        background: #DD4B39;
+    }
 
-.social_login .social_box:hover  {
-    background:  #E4E4E2;
+    .icon_title  {
+        display: block;
+         padding: 5px 0;
+         float: left;
+         font-weight:  bold;
+         font-size:  16px;
+         color: #777;
+    }
 }
-
 
 .centeredText  {
     text-align:  center;
@@ -137,48 +138,49 @@ a {
 
 
 .action_btns  {
-    clear: both;
+     clear: both;
      overflow:  hidden;
+
+     a  {
+         display:  block;
+     }
 }
 
-.action_btns a  {
-    display:  block;
-}
 
 /* User Login Form */
 .user_login  {
     display:  none;
+
+
+    label  {
+        display:  block;
+        margin-bottom: 5px;
+  }
+
+    input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"] {
+        display:  block;
+         width: 90%;
+         padding:  10px;
+         border: 1px solid #DDD;
+         color: #666;
+    }
+
+    input[type="checkbox"]  {
+       float: left;
+       margin-right: 5px;
+    }
+
+    input[type="checkbox"]+label  {
+        float: left;
+    }
+
+
+    .checkbox  {
+        margin-bottom:  10px;
+         clear:  both;
+         overflow:  hidden;
+    }
 }
-
-.user_login label  {
-    display:  block;
-     margin-bottom: 5px;
-}
-
-.user_login input[type="text"],  .user_login input[type="email"],  .user_login input[type="password"]  {
-    display:  block;
-     width: 90%;
-     padding:  10px;
-     border: 1px solid #DDD;
-     color: #666;
-}
-
-.user_login input[type="checkbox"]  {
-    float: left;
-     margin-right: 5px;
-}
-
-.user_login input[type="checkbox"]+label  {
-    float: left;
-}
-
-
-.user_login .checkbox  {
-    margin-bottom:  10px;
-     clear:  both;
-     overflow:  hidden;
-}
-
 .forgot_password  {
     display: block;
      margin:  20px 0 10px;
@@ -191,33 +193,33 @@ a {
 /* User Register Form */
 .user_register  {
     display:  none;
-}
 
-.user_register label  {
-    display:  block;
-     margin-bottom: 5px;
-}
+    label  {
+        display:  block;
+         margin-bottom: 5px;
+    }
 
-.user_register input[type="text"],  .user_register input[type="email"],  .user_register input[type="password"]  {
-    display:  block;
-     width: 90%;
-     padding:  10px;
-     border: 1px solid #DDD;
-     color: #666;
-}
+    input[type="text"],  .user_register input[type="email"],  .user_register input[type="password"]  {
+        display:  block;
+         width: 90%;
+         padding:  10px;
+         border: 1px solid #DDD;
+         color: #666;
+    }
 
-.user_register input[type="checkbox"]  {
-    float: left;
-     margin-right: 5px;
-}
+    input[type="checkbox"]  {
+        float: left;
+         margin-right: 5px;
+    }
 
-.user_register input[type="checkbox"]+label  {
-    float: left;
-}
+    input[type="checkbox"]+label  {
+        float: left;
+    }
 
 
-.user_register .checkbox  {
-    margin-bottom:  10px;
-     clear:  both;
-     overflow:  hidden;
+    .checkbox  {
+        margin-bottom:  10px;
+         clear:  both;
+         overflow:  hidden;
+    }
 }
