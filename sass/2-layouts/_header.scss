@@ -1,6 +1,8 @@
 $li-num : 4;
 $li-num-but : 8;
 $a-f-size : 14px;
+$bg-c : #11B700;
+$a-bg-c : #0E9500;
 
 
 @import "../0-plugins/_extClasses.scss";
@@ -10,6 +12,7 @@ $a-f-size : 14px;
 // It should be changed
   min-width: 905px;
   display: block;
+  background-color: $bg-c;
 
   h1 {
     font-size: 44px;
@@ -29,16 +32,16 @@ $a-f-size : 14px;
       text-transform: uppercase;
       font-size: $a-f-size;
 
-      background: #0E9500;
-      color: #F6E36D;
+      background: $a-bg-c;
+      color: #efefef;
 
       border: 2px solid #0B7000;
 
       border-radius: 10px;
 
       &:hover {
-        background: #D8C340;
-        color: #6F6000;
+        background: $a-bg-c + #222;
+        color: #222;
       }
     }
     // Delete right border on menu
@@ -54,7 +57,6 @@ $a-f-size : 14px;
     @include container-width;
     margin-top: 10px;
     padding: 4px 0;
-    // background : red;
     display: block;
 
     ul {
@@ -67,9 +69,8 @@ $a-f-size : 14px;
       width: 38% ;
       float: right;
       input[type="search"] {
-        // background: red;
       }
-      input[type="submit"] {
+      input[type="button"] {
         background:url(../img/search-nav.png);
         background-repeat: no-repeat;
         width:20px;

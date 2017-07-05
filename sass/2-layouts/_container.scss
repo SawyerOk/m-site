@@ -1,6 +1,67 @@
 #container {
-  margin: 0 auto;
-  width: 90%;
-  background: green;
-  padding: 5px;
+  @include container-width;
+  margin-top: 25px;
+
+  .l-main {
+    width: 73%;
+    float: left;
+    margin-top: 25px;
+    background: white;
+
+    article {
+
+      padding: 20px;
+      color: black;
+      }
+
+    section {
+      &.post-head {
+        small {
+          font-size: 14px;
+          display: block;
+          margin: 0 0 10px;
+          padding: 0 0 10px;
+          border-bottom: solid 2px #aaa;
+          color: #0C055F;
+        }
+      }
+
+      &.post-foot {
+        font-size: 14px;
+        border-top: solid 2px #aaa;
+        margin-top: 12px ;
+        padding-top: 20px;
+      }
+     }
+
+    .art-1 {
+       img {
+         float: left;
+         margin: 0 20px 10px 0;
+       }
+     }
+
+     .art-2 {
+       img {
+         float: right;
+         margin: 0 0 10px 10px;
+       }
+     }
+
+
+  }
+
+  .l-aside {
+    width: 26%;
+    float: right;
+    margin-top: 25px;
+    background: blue;
+
+
+
+    img {
+    width: 100%;
+    }
+
+  }
 }

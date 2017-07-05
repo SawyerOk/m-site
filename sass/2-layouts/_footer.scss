@@ -1,15 +1,16 @@
 #footer {
-  background: #6F3900;
-  border: 2px solid #D88E40;
+  background: #0E9500;
+
   ul {
     margin: 10px;
   }
   li a {
-    color: #D88E40;
+
+    color: #fff;
     text-decoration: none;
 
     &:hover {
-      color: #BA6E1E  ;
+      color: #111  ;
     }
   }
   .f-links {
@@ -23,6 +24,6 @@
     clear: both;
     text-align: center;
     padding-bottom: 10px;
-    color: #D88E40;
+    color: #000;
   }
 }
