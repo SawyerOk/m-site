@@ -153,8 +153,8 @@ ul {
 .popupContainer {
   width: 410px;
   height: auto;
-  background: #f1f1f1;
-  border: 1px #ececec solid;
+  background: yellow;
+  border: 1px #fafa00 solid;
   border-radius: 10px; }
 
 .btn {
@@ -188,7 +188,7 @@ a.btn_red {
 .popupHeader {
   font-size: 16px;
   text-transform: uppercase;
-  background: #f6f6f6;
+  background: #ffff05;
   position: relative;
   padding: 10px 20px;
   border-bottom: 1px solid #DDD;
