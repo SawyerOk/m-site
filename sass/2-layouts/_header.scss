@@ -2,6 +2,7 @@ $li-num : 4;
 $li-num-but : 8;
 $a-f-size : 14px;
 
+
 @import "../0-plugins/_extClasses.scss";
 
 #header {
@@ -9,7 +10,6 @@ $a-f-size : 14px;
 // It should be changed
   min-width: 905px;
   display: block;
-  background: green;
 
   h1 {
     font-size: 44px;
@@ -21,18 +21,19 @@ $a-f-size : 14px;
 
       display: inline-block;
       float: left;
-      width: 100/$li-num * 1% ;
+      width: 100/$li-num * 1% - 1%;
+      margin-right: 3px;
       padding: 5px;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       font-size: $a-f-size;
 
-      background: #6F6000;
-      border-right: 1px solid #fff;
+      background: #0E9500;
       color: #F6E36D;
 
-      border: 2px solid aqua;
+      border: 2px solid #0B7000;
+
       border-radius: 10px;
 
       &:hover {
@@ -51,8 +52,9 @@ $a-f-size : 14px;
 
   .h-nav {
     @include container-width;
-    margin-top: 5px;
-    background : red;
+    margin-top: 10px;
+    padding: 4px 0;
+    // background : red;
     display: block;
 
     ul {
@@ -65,10 +67,14 @@ $a-f-size : 14px;
       width: 38% ;
       float: right;
       input[type="search"] {
-        background: red;
+        // background: red;
       }
       input[type="submit"] {
-        background: red;
+        background:url(../img/search-nav.png);
+        background-repeat: no-repeat;
+        width:20px;
+        height:20px;
+        border: 0;
       }
     }
   }
@@ -77,30 +83,33 @@ $a-f-size : 14px;
     color: #5664A8;
     height: 80px;
     margin-top: -25px;
-    background-color: yellow;
+    background-color: #15E000;
 
     .logo {
       @include container-width;
       h1,p {
         position: relative;
         text-align: right;
+        color: #0C055F;
       }
       h1 {
         right: 250px;
         margin-bottom: 0px;
+
       }
 
     }
   }
 
   .h-footer {
-    margin: 5px auto;
+
     width: 100%;
-    background : purple;
+    margin : 7px;
 
     li {
       a {
-        width: 100/$li-num-but * 1% ;
+        padding: 5px;
+        width: 100/$li-num-but * 1% - 0.5%  ;
       }
     }
   }

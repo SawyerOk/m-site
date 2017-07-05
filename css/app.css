@@ -13,7 +13,7 @@
 
 body {
   min-width: 605px;
-  background-color: black;
+  background-color: #ddd;
   color: #000; }
   body h1, body h2, body h3, body h4, body h5, body h6 {
     font-family: 'Zilla Slab', serif; }
@@ -25,24 +25,23 @@ ul {
 
 #header {
   min-width: 905px;
-  display: block;
-  background: green; }
+  display: block; }
   #header h1 {
     font-size: 44px; }
   #header li a {
     position: relative;
     display: inline-block;
     float: left;
-    width: 25%;
+    width: 24%;
+    margin-right: 3px;
     padding: 5px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    background: #6F6000;
-    border-right: 1px solid #fff;
+    background: #0E9500;
     color: #F6E36D;
-    border: 2px solid aqua;
+    border: 2px solid #0B7000;
     border-radius: 10px; }
     #header li a:hover {
       background: #D8C340;
@@ -52,8 +51,8 @@ ul {
   #header .h-nav {
     margin: 0 auto;
     width: 90%;
-    margin-top: 5px;
-    background: red;
+    margin-top: 10px;
+    padding: 4px 0;
     display: block; }
     #header .h-nav ul {
       padding: 0;
@@ -62,30 +61,33 @@ ul {
       display: inline;
       width: 38%;
       float: right; }
-      #header .h-nav .search-tab input[type="search"] {
-        background: red; }
       #header .h-nav .search-tab input[type="submit"] {
-        background: red; }
+        background: url(../img/search-nav.png);
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        border: 0; }
   #header .h-main {
     color: #5664A8;
     height: 80px;
     margin-top: -25px;
-    background-color: yellow; }
+    background-color: #15E000; }
     #header .h-main .logo {
       margin: 0 auto;
       width: 90%; }
       #header .h-main .logo h1, #header .h-main .logo p {
         position: relative;
-        text-align: right; }
+        text-align: right;
+        color: #0C055F; }
       #header .h-main .logo h1 {
         right: 250px;
         margin-bottom: 0px; }
   #header .h-footer {
-    margin: 5px auto;
     width: 100%;
-    background: purple; }
+    margin: 7px; }
     #header .h-footer li a {
-      width: 12.5%; }
+      padding: 5px;
+      width: 12%; }
 
 #container {
   margin: 0 auto;
