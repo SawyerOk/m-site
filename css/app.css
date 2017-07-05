@@ -47,8 +47,6 @@ ul {
     #header li a:hover {
       background: #30b722;
       color: #222; }
-  #header li:last-child a {
-    border-right: none; }
   #header .h-nav {
     margin: 0 auto;
     width: 90%;

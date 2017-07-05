@@ -44,14 +44,8 @@ $a-bg-c : #0E9500;
         color: #222;
       }
     }
-    // Delete right border on menu
 
-    &:last-child {
-      a {
-        border-right: none;
-        }
-      }
-    }
+  }
 
   .h-nav {
     @include container-width;
