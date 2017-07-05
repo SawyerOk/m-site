@@ -1,11 +1,21 @@
 $li-num : 4;
+$li-num-but : 8;
 $a-f-size : 14px;
+
+@import "../0-plugins/_extClasses.scss";
+
 #header {
-  ul {
-    margin: 0;
-    width: 100%;
+
+// It should be changed
+  min-width: 905px;
+  display: block;
+  background: green;
+
+  h1 {
+    font-size: 44px;
   }
-  li
+
+  li {
     a {
       position: relative;
 
@@ -13,34 +23,90 @@ $a-f-size : 14px;
       float: left;
       width: 100/$li-num * 1% ;
       padding: 5px;
-
-      background: #6F6000;
-      border-right: 1px solid #fff;
-
-      color: #F6E36D;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       font-size: $a-f-size;
+
+      background: #6F6000;
+      border-right: 1px solid #fff;
+      color: #F6E36D;
+
+      border: 2px solid aqua;
+      border-radius: 10px;
 
       &:hover {
         background: #D8C340;
         color: #6F6000;
       }
     }
-  .h-main {
-    color: #5664A8;
-    height: 100px;
-    background-color: #22327F;
-    margin-top: -25px;
-  }
-}
+    // Delete right border on menu
 
+    &:last-child {
+      a {
+        border-right: none;
+        }
+      }
+    }
 
-@media screen and (max-width: 705px){
-  #header {
-    li a {
-      font-size: $a-f-size - 2px;
+  .h-nav {
+    @include container-width;
+    margin-top: 5px;
+    background : red;
+    display: block;
+
+    ul {
+      padding: 0;
+      width: 60%;
+     }
+
+    .search-tab {
+      display: inline;
+      width: 38% ;
+      float: right;
+      input[type="search"] {
+        background: red;
+      }
+      input[type="submit"] {
+        background: red;
+      }
     }
   }
+
+  .h-main {
+    color: #5664A8;
+    height: 80px;
+    margin-top: -25px;
+    background-color: yellow;
+
+    .logo {
+      @include container-width;
+      h1,p {
+        position: relative;
+        text-align: right;
+      }
+      h1 {
+        right: 250px;
+        margin-bottom: 0px;
+      }
+
+    }
+  }
+
+  .h-footer {
+    margin: 5px auto;
+    width: 100%;
+    background : purple;
+
+    li {
+      a {
+        width: 100/$li-num-but * 1% ;
+      }
+    }
+  }
+
+
+
+
+
 }
