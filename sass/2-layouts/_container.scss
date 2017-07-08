@@ -1,93 +1,67 @@
 #container {
-  margin: 0 auto;
-  width: 100%;
-  background: #6CA9D7;
-  padding: 5px;
-
-
+  @include container-width;
+  margin-top: 25px;
 
   .l-main {
     width: 73%;
     float: left;
-    padding: 10px;
+    margin-top: 25px;
+    background: white;
 
     article {
-      background: white;
-      padding: 20px;
-      margin: 20px 0;
-      color: black;
 
-      p {
-        margin: 0 0 1em;
+      padding: 20px;
+      color: black;
       }
-    }
 
     section {
       &.post-head {
         small {
+          font-size: 14px;
           display: block;
           margin: 0 0 10px;
           padding: 0 0 10px;
-          border-bottom: solid 2px #bbb;
-          color: #00c6a0;
-          font-size: 14px;
+          border-bottom: solid 2px #aaa;
+          color: #0C055F;
         }
       }
 
       &.post-foot {
-        font-size: 15px;
-        border-top: solid 1px #eee;
-        margin: 5px 0 0 0;
-        padding: 5px 0 0 0;
+        font-size: 14px;
+        border-top: solid 2px #aaa;
+        margin-top: 12px ;
+        padding-top: 20px;
       }
+     }
 
-    }
     .art-1 {
-      img {
-        float: left;
-        margin: 0 10px 10px 0;
-      }
-    }
+       img {
+         float: left;
+         margin: 0 20px 10px 0;
+       }
+     }
 
-    .art-2 {
-      img {
-        float: right;
-        margin: 0 0 10px 10px;
-      }
-    }
+     .art-2 {
+       img {
+         float: right;
+         margin: 0 0 10px 10px;
+       }
+     }
+
 
   }
 
   .l-aside {
-    width: 23%;
+    width: 26%;
     float: right;
-    margin-top: 24px;
-    padding: 10px;
-    display: align-content;
+    margin-top: 25px;
+    background: blue;
+
+
+
     img {
-      width: 100%;
+    width: 100%;
     }
 
-  }
-}
-
-@media screen and (max-width: 770px){
-  #container {
-    .l-aside{
-      width: 100%;
-      display: inline;
-      float: left;
-
-      img {
-        width: 50%;
-        display: inline-block;
-        float: left;
-        padding: 5px;
-
-      }
-    }
-    .l-main {
-      width: 100%;
-    }
   }
 }

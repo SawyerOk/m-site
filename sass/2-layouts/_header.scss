@@ -1,46 +1,116 @@
-$li-num : 5;
+$li-num : 4;
+$li-num-but : 8;
 $a-f-size : 14px;
+$bg-c : #11B700;
+$a-bg-c : #0E9500;
+
+
+@import "../0-plugins/_extClasses.scss";
+
 #header {
-  ul {
-    margin: 0;
-    width: 100%;
+
+// It should be changed
+  min-width: 905px;
+  display: block;
+  background-color: $bg-c;
+
+  h1 {
+    font-size: 44px;
   }
-  li
+
+  li {
     a {
       position: relative;
 
       display: inline-block;
       float: left;
-      width: 100/$li-num * 1% ;
+      width: 100/$li-num * 1% - 1%;
+      margin-right: 3px;
       padding: 5px;
-
-      background: #6F6000;
-      border-right: 1px solid #fff;
-
-      color: #F6E36D;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
       font-size: $a-f-size;
 
+      background: $a-bg-c;
+      color: #efefef;
+
+      border: 2px solid #0B7000;
+
+      border-radius: 10px;
+
       &:hover {
-        background: #D8C340;
-        color: #6F6000;
+        background: $a-bg-c + #222;
+        color: #222;
       }
     }
-  .h-main {
-    color: #5664A8;
-    height: 100px;
-    background-color: #22327F;
-    margin-top: -25px;
+
   }
-}
 
+  .h-nav {
+    @include container-width;
+    margin-top: 10px;
+    padding: 4px 0;
+    display: block;
 
-@media screen and (max-width: 705px){
-  #header {
-    li a {
-      font-size: $a-f-size - 2px;
+    ul {
+      padding: 0;
+      width: 60%;
+     }
+
+    .search-tab {
+      display: inline;
+      width: 38% ;
+      float: right;
+      input[type="search"] {
+      }
+      input[type="button"] {
+        background:url(../img/search-nav.png);
+        background-repeat: no-repeat;
+        width:20px;
+        height:20px;
+        border: 0;
+      }
     }
   }
+
+  .h-main {
+    color: #5664A8;
+    height: 80px;
+    margin-top: -25px;
+    background-color: #15E000;
+
+    .logo {
+      @include container-width;
+      h1,p {
+        position: relative;
+        text-align: right;
+        color: #0C055F;
+      }
+      h1 {
+        right: 250px;
+        margin-bottom: 0px;
+
+      }
+
+    }
+  }
+
+  .h-footer {
+
+    width: 100%;
+    margin : 7px;
+
+    li {
+      a {
+        padding: 5px;
+        width: 100/$li-num-but * 1% - 0.5%  ;
+      }
+    }
+  }
+
+
+
+
+
 }
