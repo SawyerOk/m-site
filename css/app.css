@@ -41,12 +41,15 @@ ul {
     text-transform: uppercase;
     font-size: 14px;
     background: #0E9500;
-    color: #efefef;
+    color: #fefefe;
     border: 2px solid #0B7000;
     border-radius: 10px; }
     #header li a:hover {
       background: #30b722;
       color: #222; }
+    #header li a:hover {
+      background: #30b722;
+      color: #efefef; }
   #header .h-nav {
     margin: 0 auto;
     width: 90%;
@@ -147,34 +150,38 @@ ul {
 
 /* Overlay when Modal is open */
 #modal {
-  display: none; }
+  display: none;
+  color: #0C055F; }
 
 /* Modal box or Popup box */
 .popupContainer {
   width: 410px;
   height: auto;
-  background: yellow;
-  border: 1px #fafa00 solid;
-  border-radius: 10px; }
+  background: #15E000;
+  border: 3px #04cf00 solid;
+  border-radius: 5px; }
 
 .btn {
-  padding: 10px 20px;
-  background: #e1e1e1; }
-  .btn:hover {
-    background: #d8d8d8; }
-
-.btn_red {
-  background: #ED6347;
-  color: #FFF; }
-  .btn_red:hover {
-    background: #dc5236; }
-
-a.btn {
-  color: #666;
+  margin-right: 3px;
+  padding: 5px;
   text-align: center;
-  text-decoration: none; }
-a.btn_red {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: #0E9500;
+  color: #fefefe;
+  border: 2px solid #0B7000;
+  border-radius: 10px; }
+  .btn:hover {
+    background: #30b722;
+    color: #222; }
+
+.btn_act {
+  background: #0C055F;
   color: #FFF; }
+  .btn_act:hover {
+    background: #5147d1;
+    color: #000; }
 
 .one_half {
   width: 50%;
@@ -188,7 +195,7 @@ a.btn_red {
 .popupHeader {
   font-size: 16px;
   text-transform: uppercase;
-  background: #ffff05;
+  background: #11B700;
   position: relative;
   padding: 10px 20px;
   border-bottom: 1px solid #DDD;
@@ -198,9 +205,9 @@ a.btn_red {
     right: 0;
     top: 0;
     padding: 10px 15px;
-    background: #E4E4E2;
+    background: #0E9500;
     cursor: pointer;
-    color: #aaa;
+    color: #fff;
     font-size: 16px; }
 
 .popupBody {
@@ -212,17 +219,18 @@ a.btn_red {
   clear: both;
   padding: 10px;
   margin-bottom: 10px;
-  background: #F4F4F2;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #0E9500;
+  color: #fefefe; }
   .social_login .social_box:hover {
-    background: #E4E4E2; }
+    background: #30b722;
+    color: #222; }
 .social_login .icon {
   display: block;
   width: 10px;
   padding: 5px 10px;
   margin-right: 10px;
   float: left;
-  color: #FFF;
   font-size: 16px;
   text-align: center; }
 .social_login .fb .icon {
@@ -235,7 +243,7 @@ a.btn_red {
   float: left;
   font-weight: bold;
   font-size: 16px;
-  color: #777; }
+  color: #fff; }
 
 .centeredText {
   text-align: center;
@@ -250,56 +258,49 @@ a.btn_red {
   .action_btns a {
     display: block; }
 
-/* User Login Form */
-.user_login {
+/* User Login Form And Register Form*/
+.user_login, .user_register {
   display: none; }
-  .user_login label {
+  .user_login label, .user_register label {
+    float: right;
+    width: 38%;
+    font-size: 18px;
+    padding: 7px; }
+  .user_login input[type="email"], .user_login input[type="password"], .user_login input[type="text"], .user_register input[type="email"], .user_register input[type="password"], .user_register input[type="text"] {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    height: 45px;
     display: block;
-    margin-bottom: 5px; }
-  .user_login input[type="text"], .user_login .user_login input[type="email"], .user_login .user_login input[type="password"] {
-    display: block;
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #DDD;
-    color: #666; }
-  .user_login input[type="checkbox"] {
-    float: left;
-    margin-right: 5px; }
-  .user_login input[type="checkbox"] + label {
-    float: left; }
-  .user_login .checkbox {
+    width: 60%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    background: #eee;
+    margin-bottom: 10px;
+    font: 16px Arial, Helvetica, sans-serif;
+    height: 45px; }
+  .user_login .checkbox, .user_register .checkbox {
     margin-bottom: 10px;
     clear: both;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 10px; }
+    .user_login .checkbox label, .user_register .checkbox label {
+      width: 90%; }
+    .user_login .checkbox input[type="checkbox"], .user_register .checkbox input[type="checkbox"] {
+      width: 10%; }
 
+/* User Login Form */
 .forgot_password {
   display: block;
   margin: 20px 0 10px;
   clear: both;
   overflow: hidden;
   text-decoration: none;
-  color: #ED6347; }
+  text-align: center;
+  color: #fff; }
 
 /* User Register Form */
-.user_register {
-  display: none; }
-  .user_register label {
-    display: block;
-    margin-bottom: 5px; }
-  .user_register input[type="text"], .user_register .user_register input[type="email"], .user_register .user_register input[type="password"] {
-    display: block;
-    width: 90%;
-    padding: 10px;
-    border: 1px solid #DDD;
-    color: #666; }
-  .user_register input[type="checkbox"] {
-    float: left;
-    margin-right: 5px; }
-  .user_register input[type="checkbox"] + label {
-    float: left; }
-  .user_register .checkbox {
-    margin-bottom: 10px;
-    clear: both;
-    overflow: hidden; }
 
 /*# sourceMappingURL=app.css.map */

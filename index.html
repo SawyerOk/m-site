@@ -28,9 +28,9 @@
     <nav class="h-nav clearfix">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="#">About</a></li>
         <li><a id="modal_trigger" href="#modal">Sign In/Up</a></li>
-        <li><a href="contact-us.html">Contact</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
       <div class="search-tab">
         <input type="search" placeholder="Search..." maxlength="20">
@@ -63,14 +63,17 @@
   <div id="container" class="clearfix">
 
     <div id="modal" class="popupContainer" style="display:none;">
+      <header class="popupHeader">
+  			<span class="header_title">Login</span>
+  			<span class="modal_close"><i class="fa fa-times"></i></span>
+  		</header>
       <section class="popupBody">
   			<!-- Social Login -->
   			<div class="social_login">
-  				<div class="">
+          <div>
   					<a href="#" class="social_box fb">
   						<span class="icon"><i class="fa fa-facebook"></i></span>
   						<span class="icon_title">Connect with Facebook</span>
-
   					</a>
 
   					<a href="#" class="social_box google">
@@ -92,18 +95,19 @@
   			<!-- Username & Password Login form -->
   			<div class="user_login">
   				<form>
-            <label for="f-email">Email : <input type="email" id="f-email"></label>
-            <label>Password : <input type="password" id="f-pass"></label>
+            <label for="u-email">Email</label>
+            <input type="email" id="u-email" placeholder="Email">
+            <label for="u-pass">Password</label>
+            <input type="password" placeholder="Password">
 
 
   					<div class="checkbox">
-  						<input id="remember" type="checkbox" />
-  						<label for="remember">Remember me on this computer</label>
+              <label for="remember">Remember me on this computer<input id="remember" type="checkbox"></label>
   					</div>
 
   					<div class="action_btns">
   						<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-  						<div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
+  						<div class="one_half last"><a href="#" class="btn btn_act">Login</a></div>
   					</div>
   				</form>
 
@@ -113,22 +117,26 @@
   			<!-- Register Form -->
   			<div class="user_register">
   				<form>
-            <label>Name : <input type="text" id="f-name"></label>
-            <label>Email : <input type="email" id="f-email"></label>
+            <label for="u-name">User Name</label>
+            <input type="text" id="u-name" placeholder="user name">
 
+            <label for="u-email">Email </label>
+            <input type="email" id="u-email" placeholder="email">
 
-            <label>Password : <input type="password" id="f-pass"></label>
-            <label>Confirm Password : <input type="password" id="f-conf-pass"></label>
+            <label for="u-pass">Password </label>
+            <input type="password" id="u-pass" placeholder="password">
+
+            <label for="u-conf-pass">Confirm Password </label>
+            <input type="password" id="u-conf-pass" placeholder="confirm password">
 
 
   					<div class="checkbox">
-  						<input id="send_updates" type="checkbox" />
-  						<label for="send_updates">Send me occasional email updates</label>
+              <label for="send_updates">Send me occasional email updates<input id="send_updates" type="checkbox"></label>
   					</div>
 
   					<div class="action_btns">
   						<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-  						<div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
+  						<div class="one_half last"><a href="#" class="btn btn_act">Register</a></div>
   					</div>
   				</form>
   			</div>

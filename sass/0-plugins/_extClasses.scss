@@ -1,4 +1,37 @@
+$li-num : 4; //Number of buttons on the top of header
+$li-num-but : 8; //Number of buttons on the bottom of header
+$a-f-size : 14px; // Font size of anchors into buttons
+$bg-c : #11B700; // Background color of header
+$a-bg-c : #0E9500; // Button's background
+$text-c : #0C055F; // TColor of h1,p
+$h-main-bg-c : #15E000; // h-main bg-color
+
 @mixin container-width {
   margin: 0 auto;
   width: 90%;
+}
+
+@mixin btn-def-style {
+  background: $a-bg-c;
+  color: #fefefe;
+  &:hover {
+    background: $a-bg-c + #222;
+    color: #222;
+  }
+}
+@mixin btn-style {
+  margin-right: 3px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: $a-f-size;
+  @include btn-def-style;
+
+
+  border: 2px solid #0B7000;
+
+  border-radius: 10px;
+
+
 }
