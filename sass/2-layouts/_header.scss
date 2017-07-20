@@ -1,9 +1,7 @@
 @import "../0-plugins/_extClasses.scss";
 
 #header {
-
-// It should be changed
-  min-width: 905px;
+  // It should be changed
   display: block;
   background-color: $bg-c;
 
@@ -14,11 +12,9 @@
   li {
     a {
       position: relative;
-
       display: inline-block;
       float: left;
       width: 100/$li-num * 1% - 1%;
-
       @include btn-style;
 
       &:hover {
@@ -26,7 +22,6 @@
         color: #efefef;
       }
     }
-
   }
 
   .h-nav {
@@ -38,19 +33,20 @@
     ul {
       padding: 0;
       width: 60%;
-     }
+    }
 
     .search-tab {
       display: inline;
-      width: 38% ;
+      width: 38%;
       float: right;
-      input[type="search"] {
-      }
+
+      input[type="search"] {}
+
       input[type="button"] {
-        background:url(../img/search-nav.png);
+        background: url("../img/search-nav.png");
         background-repeat: no-repeat;
-        width:20px;
-        height:20px;
+        width: 20px;
+        height: 20px;
         border: 0;
       }
     }
@@ -64,35 +60,74 @@
 
     .logo {
       @include container-width;
-      h1,p {
+
+      h1,
+      p {
         position: relative;
         text-align: right;
         color: $text-c;
       }
+
       h1 {
         right: 250px;
-        margin-bottom: 0px;
-
+        margin-bottom: 0;
       }
-
     }
   }
 
   .h-footer {
-
     width: 100%;
-    margin : 7px;
+    margin: 7px;
 
     li {
       a {
         padding: 5px;
-        width: 100/$li-num-but * 1% - 0.5%  ;
+        width: 100/$li-num-but * 1% - 0.5%;
+      }
+    }
+  }
+}
+@media only screen and (max-width : $table) {
+  #header {
+    li {
+      a {
+        font-size: $a-f-size - 2px;
+        padding: $a-p - 2px;
+      }
+    }
+  }
+}
+@media only screen and (max-width : 670px) {
+  #header {
+    li {
+      a {
+        font-size: $a-f-size - 2px;
+        padding: $a-p - 2px;
+        width: 100/$li-num * 1% - 1%;
+      }
+    }
+
+    .h-nav {
+      ul {
+        width: 100%;
+      }
+
+      .search-tab {
+        display: none;
+      }
+    }
+
+  .h-footer {
+    width: 100%;
+    margin: 7px;
+
+    li  {
+      a {
+          width: 100/$li-num-but* 2 * 1% - 0.5%;
+          margin-bottom: 5px;
       }
     }
   }
 
-
-
-
-
+}
 }

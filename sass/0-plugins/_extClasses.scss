@@ -5,6 +5,8 @@ $bg-c : #11B700; // Background color of header
 $a-bg-c : #0E9500; // Button's background
 $text-c : #0C055F; // TColor of h1,p
 $h-main-bg-c : #15E000; // h-main bg-color
+$a-p : 5px;
+$table :  768px;
 
 @mixin container-width {
   margin: 0 auto;
@@ -21,7 +23,7 @@ $h-main-bg-c : #15E000; // h-main bg-color
 }
 @mixin btn-style {
   margin-right: 3px;
-  padding: 5px;
+  padding: $a-p;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;

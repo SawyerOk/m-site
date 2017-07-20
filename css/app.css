@@ -24,7 +24,6 @@ ul {
   list-style: none; }
 
 #header {
-  min-width: 905px;
   display: block;
   background-color: #11B700; }
   #header h1 {
@@ -64,7 +63,7 @@ ul {
       width: 38%;
       float: right; }
       #header .h-nav .search-tab input[type="button"] {
-        background: url(../img/search-nav.png);
+        background: url("../img/search-nav.png");
         background-repeat: no-repeat;
         width: 20px;
         height: 20px;
@@ -77,13 +76,14 @@ ul {
     #header .h-main .logo {
       margin: 0 auto;
       width: 90%; }
-      #header .h-main .logo h1, #header .h-main .logo p {
+      #header .h-main .logo h1,
+      #header .h-main .logo p {
         position: relative;
         text-align: right;
         color: #0C055F; }
       #header .h-main .logo h1 {
         right: 250px;
-        margin-bottom: 0px; }
+        margin-bottom: 0; }
   #header .h-footer {
     width: 100%;
     margin: 7px; }
@@ -91,6 +91,25 @@ ul {
       padding: 5px;
       width: 12%; }
 
+@media only screen and (max-width: 768px) {
+  #header li a {
+    font-size: 12px;
+    padding: 3px; } }
+@media only screen and (max-width: 670px) {
+  #header li a {
+    font-size: 12px;
+    padding: 3px;
+    width: 24%; }
+  #header .h-nav ul {
+    width: 100%; }
+  #header .h-nav .search-tab {
+    display: none; }
+  #header .h-footer {
+    width: 100%;
+    margin: 7px; }
+    #header .h-footer li a {
+      width: 24.5%;
+      margin-bottom: 5px; } }
 #container {
   margin: 0 auto;
   width: 90%;
@@ -129,6 +148,14 @@ ul {
     #container .l-aside img {
       width: 100%; }
 
+@media only screen and (max-width: 768px) {
+  #container .l-aside {
+    width: 100%; }
+    #container .l-aside img {
+      width: 50%;
+      float: left; }
+  #container .l-main {
+    width: 100%; } }
 #footer {
   background: #0E9500; }
   #footer ul {

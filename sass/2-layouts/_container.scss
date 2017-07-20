@@ -9,10 +9,9 @@
     background: white;
 
     article {
-
       padding: 20px;
       color: black;
-      }
+    }
 
     section {
       &.post-head {
@@ -29,26 +28,24 @@
       &.post-foot {
         font-size: 14px;
         border-top: solid 2px #aaa;
-        margin-top: 12px ;
+        margin-top: 12px;
         padding-top: 20px;
       }
-     }
+    }
 
     .art-1 {
-       img {
-         float: left;
-         margin: 0 20px 10px 0;
-       }
-     }
+      img {
+        float: left;
+        margin: 0 20px 10px 0;
+      }
+    }
 
-     .art-2 {
-       img {
-         float: right;
-         margin: 0 0 10px 10px;
-       }
-     }
-
-
+    .art-2 {
+      img {
+        float: right;
+        margin: 0 0 10px 10px;
+      }
+    }
   }
 
   .l-aside {
@@ -57,10 +54,24 @@
     margin-top: 25px;
     background: blue;
 
-
-
     img {
-    width: 100%;
+      width: 100%;
+    }
+  }
+}
+@media only screen and (max-width : $table ) {
+  #container {
+    .l-aside {
+      width: 100%;
+
+      img {
+        width: 50%;
+        float: left;
+      }
+    }
+
+    .l-main {
+      width: 100%
     }
 
   }
